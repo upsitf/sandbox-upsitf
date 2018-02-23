@@ -5,8 +5,8 @@ titleAlt: "UPSITF"
 titleFull: "UP System Information Technology Foundation, Inc."
 
 
-baseurl: http://toffmendoza.me/sandbox-upsitf
-#baseurl: https://upsitf.org
+#baseurl: http://upsitf.github.io/sandbox-upsitf
+baseurl: https://upsitf.org
 
 # Build settings
 markdown: kramdown
@@ -18,44 +18,16 @@ headerDropdown: false
 switchBlog: false
 switchAnchorSlash: true
 
-fileSchedule: "UPSITFShortCourses20180216.pdf"
-dataLastUpdated: "2018/02/16 9:45 AM"
+fileSchedule: "UPSITFShortCourses20180223.pdf"
+dataLastUpdated: "2018/02/23 4:00 PM"
 
-urlRegForm: "https://sitf.typeform.com/to/tXnMb4"
-urlRegFormMini: "http://bit.ly/upsitf-register"
-
-urlFacebook: "https://www.facebook.com/upsitf.org"
-urlTwitter: "https://twitter.com/upsitf"
-
-urlY4iT: "https://y4it.org"
-urlY4iTFacebook: "https://facebook.com/ilove.Y4iT"
-urlY4iTTwitter: "https://twitter.com/y4it"
-urlY4iTInstagram: "https://instagram.com/y4it"
-contactY4iTEmailInfo: "info@y4it.org"
-contactY4iTEmailMarketing: "marketing@y4it.org"
-
-urlTBC4K: "https://tbc4k.upsitf.org"
-urlTBC4KFacebook: "https://facebook.com/tbc4k"
-
-contactAddress:
- - "Rm. 303 Vidal Tan Hall"
- - "Quirino Ave. cor. Velasquez St."
- - "UP Diliman, Quezon City"
-contactHours:
- - "8am to 5pm"
-contactEmail: "info@upsitf.org"
-contactEmailMarketing: "marketing@upsitf.org"
-contactLandlineMain: (02) 788 5898
-contactLandlineSub: (02) 436 2217
-contactFax: (02) 920 2036
-contactMobile: 0917 563 5682
 
 
 
 
 dataShortCoursesSAMPLE:
  - id: "abcdef"
-   categoryId: "ghijkl"   #string
+   status: "pending"             # "pending" or "confirmed" or "ongoing" or "postponed" or "cancelled"
    days: "Three (3)"                 #string format = [stringNumber] ([intNumber])
    day: "Sunday"                  #string
    recurrence: true
@@ -77,8 +49,8 @@ dataShortCourses:
    recurrence: true
    timeStart: "9 AM"                #string format = [intTime] [AM/PM]
    timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
-   dateStart: "February 25"     #string format = [stringMonth] [intDay], [intYear]
-   dateEnd: "March 22, 2018"      #string format = [stringMonth] [intDay], [intYear]
+   dateStart: "March 11"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "April 8, 2018"      #string format = [stringMonth] [intDay], [intYear]
    rateRegular: "14,000"         #double with commas and 2 decimal places
    rateEarlyAcadGov: "7,000"    #double with commas and 2 decimal places
    rateEarlyIndusCorpo: "9,800" #double with commas and 2 decimal places
@@ -125,8 +97,8 @@ dataShortCourses:
    recurrence: true
    timeStart: "9 AM"                #string format = [intTime] [AM/PM]
    timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
-   dateStart: "February 24"     #string format = [stringMonth] [intDay], [intYear]
-   dateEnd: "March 24, 2018"      #string format = [stringMonth] [intDay], [intYear]
+   dateStart: "March 17"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "April 14, 2018"      #string format = [stringMonth] [intDay], [intYear]
    rateRegular: "14,000"         #double with commas and 2 decimal places
    rateEarlyAcadGov: "7,000"    #double with commas and 2 decimal places
    rateEarlyIndusCorpo: "9,200" #double with commas and 2 decimal places
@@ -149,20 +121,20 @@ dataShortCourses:
    recurrence: true
    timeStart: "9 AM"                #string format = [intTime] [AM/PM]
    timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
-   dateStart: "February 25"     #string format = [stringMonth] [intDay], [intYear]
-   dateEnd: "March 11, 2018"      #string format = [stringMonth] [intDay], [intYear]
+   dateStart: "March 11"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "25, 2018"      #string format = [stringMonth] [intDay], [intYear]
    rateRegular: "9,000"         #double with commas and 2 decimal places
    rateEarlyAcadGov: "4,500"    #double with commas and 2 decimal places
    rateEarlyIndusCorpo: "6,300"          #double with commas and 2 decimal places
  - id: "ios"             #string
    status: "pending"             # "pending" or "confirmed" or "ongoing" or "postponed" or "cancelled"
    days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
-   day: "Sunday"                  #string
+   day: "Saturday"                  #string
    recurrence: true
    timeStart: "9 AM"                #string format = [intTime] [AM/PM]
    timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
-   dateStart: "February 24"     #string format = [stringMonth] [intDay], [intYear]
-   dateEnd: "March 24, 2018"      #string format = [stringMonth] [intDay], [intYear]
+   dateStart: "March 24"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "April 21, 2018"      #string format = [stringMonth] [intDay], [intYear]
    rateRegular: "18,000"         #double with commas and 2 decimal places
    rateEarlyAcadGov: "9,000"    #double with commas and 2 decimal places
    rateEarlyIndusCorpo: "12,600" #double with commas and 2 decimal places
@@ -185,8 +157,8 @@ dataShortCourses:
    recurrence: true
    timeStart: "9 AM"                #string format = [intTime] [AM/PM]
    timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
-   dateStart: "February 24"     #string format = [stringMonth] [intDay], [intYear]
-   dateEnd: "March 24, 2018"      #string format = [stringMonth] [intDay], [intYear]
+   dateStart: "March 24"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "April 21, 2018"      #string format = [stringMonth] [intDay], [intYear]
    rateRegular: "18,000"         #double with commas and 2 decimal places
    rateEarlyAcadGov: "9,000"    #double with commas and 2 decimal places
    rateEarlyIndusCorpo: "12,600" #double with commas and 2 decimal places
@@ -197,8 +169,8 @@ dataShortCourses:
    recurrence: true
    timeStart: "9 AM"                #string format = [intTime] [AM/PM]
    timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
-   dateStart: "February 25"     #string format = [stringMonth] [intDay], [intYear]
-   dateEnd: "March 25, 2018"      #string format = [stringMonth] [intDay], [intYear]
+   dateStart: "March 18"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "April 15, 2018"      #string format = [stringMonth] [intDay], [intYear]
    rateRegular: "18,000"         #double with commas and 2 decimal places
    rateEarlyAcadGov: "9,000"    #double with commas and 2 decimal places
    rateEarlyIndusCorpo: "12,600" #double with commas and 2 decimal places
@@ -209,18 +181,20 @@ dataShortCourses:
    recurrence: true
    timeStart: "9 AM"                #string format = [intTime] [AM/PM]
    timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
+   dateStart: "April 29"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "May 27, 2018"      #string format = [stringMonth] [intDay], [intYear]
    rateRegular: "14,000"         #double with commas and 2 decimal places
    rateEarlyAcadGov: "7,000"    #double with commas and 2 decimal places
    rateEarlyIndusCorpo: "9,800" #double with commas and 2 decimal places
  - id: "webdev"          #string
-   status: "confirmed"             # "pending"/"confirmed"/"ongoing"/"postponed"/"cancelled"
+   status: "pending"             # "pending"/"confirmed"/"ongoing"/"postponed"/"cancelled"
    days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
    day: "Sunday"                  #string
    recurrence: true
    timeStart: "9 AM"                #string format = [intTime] [AM/PM]
    timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
-   dateStart: "February 18"     #string format = [stringMonth] [intDay], [intYear]
-   dateEnd: "March 18, 2018"      #string format = [stringMonth] [intDay], [intYear]
+   dateStart: "April 21"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "May 19, 2018"      #string format = [stringMonth] [intDay], [intYear]
    rateRegular: "14,000"         #double with commas and 2 decimal places
    rateEarlyAcadGov: "7,000"    #double with commas and 2 decimal places
    rateEarlyIndusCorpo: "9,800" #double with commas and 2 decimal places
@@ -243,8 +217,8 @@ dataShortCourses:
    recurrence: true
    timeStart: "9 AM"                #string format = [intTime] [AM/PM]
    timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
-   dateStart: "February 24"     #string format = [stringMonth] [intDay], [intYear]
-   dateEnd: "March 24, 2018"      #string format = [stringMonth] [intDay], [intYear]
+   dateStart: "March 10"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "April 7, 2018"      #string format = [stringMonth] [intDay], [intYear]
    rateRegular: "16,000"         #double with commas and 2 decimal places
    rateEarlyAcadGov: "8,000"    #double with commas and 2 decimal places
    rateEarlyIndusCorpo: "11,200" #double with commas and 2 decimal places
@@ -279,8 +253,8 @@ dataShortCourses:
    recurrence: true
    timeStart: "9 AM"                #string format = [intTime] [AM/PM]
    timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
-   dateStart: "February 24"     #string format = [stringMonth] [intDay], [intYear]
-   dateEnd: "April 28, 2018"      #string format = [stringMonth] [intDay], [intYear]
+   dateStart: "March 24"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "May 26, 2018"      #string format = [stringMonth] [intDay], [intYear]
    rateRegular: "24,000"         #double with commas and 2 decimal places
    rateEarlyAcadGov: "12,000"    #double with commas and 2 decimal places
    rateEarlyIndusCorpo: "16,800" #double with commas and 2 decimal places
@@ -319,14 +293,14 @@ dataShortCourses:
    rateEarlyAcadGov: "12,000"    #double with commas and 2 decimal places
    rateEarlyIndusCorpo: "16,800" #double with commas and 2 decimal places
  - id: "linux101"          #string
-   status: "pending"             # "pending" or "confirmed" or "ongoing" or "postponed" or "cancelled"
+   status: "confirmed"             # "pending" or "confirmed" or "ongoing" or "postponed" or "cancelled"
    days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
    day: "Sunday"                  #string
    recurrence: true
    timeStart: "9 AM"                #string format = [intTime] [AM/PM]
    timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
-   dateStart: "February 25"     #string format = [stringMonth] [intDay], [intYear]
-   dateEnd: "March 22, 2018"      #string format = [stringMonth] [intDay], [intYear]
+   dateStart: "March 4"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "April 1, 2018"      #string format = [stringMonth] [intDay], [intYear]
    rateRegular: "17,000"         #double with commas and 2 decimal places
    rateEarlyAcadGov: "8,500"    #double with commas and 2 decimal places
    rateEarlyIndusCorpo: "11,900" #double with commas and 2 decimal places
@@ -361,8 +335,8 @@ dataShortCourses:
    recurrence: true
    timeStart: "9 AM"                #string format = [intTime] [AM/PM]
    timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
-   dateStart: "February 25"     #string format = [stringMonth] [intDay], [intYear]
-   dateEnd: "March 11, 2018"      #string format = [stringMonth] [intDay], [intYear]
+   dateStart: "March 18"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "April 15, 2018"      #string format = [stringMonth] [intDay], [intYear]
    rateRegular: "15,000"         #double with commas and 2 decimal places
    rateRegularAcadGov: "12,500"         #double with commas and 2 decimal places
  - id: "itpm"          #string
@@ -459,6 +433,12 @@ dataShortCoursesLegacy:
    rateRegular: "17,000"         #double with commas and 2 decimal places
    rateEarlyAcadGov: "8,500"    #double with commas and 2 decimal places
    rateEarlyIndusCorpo: "11,900" #double with commas and 2 decimal places
+
+########## DO NOT CHANGE ANYTHING BELOW THIS LINE ##########
+########## DO NOT CHANGE ANYTHING BELOW THIS LINE ##########
+########## DO NOT CHANGE ANYTHING BELOW THIS LINE ##########
+########## DO NOT CHANGE ANYTHING BELOW THIS LINE ##########
+########## DO NOT CHANGE ANYTHING BELOW THIS LINE ##########
 
 switchShortCoursesCategorize: true
 dataCourseOfferings:
@@ -663,3 +643,34 @@ dataCourseOfferingsLegacy:
     - name: "Educational Technology 101"
       id: "edtech"
       file: ""
+
+########## HYPERLINKS ##########
+
+urlRegForm: "https://sitf.typeform.com/to/tXnMb4"
+urlRegFormMini: "http://bit.ly/upsitf-register"
+
+urlFacebook: "https://www.facebook.com/upsitf.org"
+urlTwitter: "https://twitter.com/upsitf"
+
+urlY4iT: "https://y4it.org"
+urlY4iTFacebook: "https://facebook.com/ilove.Y4iT"
+urlY4iTTwitter: "https://twitter.com/y4it"
+urlY4iTInstagram: "https://instagram.com/y4it"
+contactY4iTEmailInfo: "info@y4it.org"
+contactY4iTEmailMarketing: "marketing@y4it.org"
+
+urlTBC4K: "https://tbc4k.upsitf.org"
+urlTBC4KFacebook: "https://facebook.com/tbc4k"
+
+contactAddress:
+ - "Rm. 303 Vidal Tan Hall"
+ - "Quirino Ave. cor. Velasquez St."
+ - "UP Diliman, Quezon City"
+contactHours:
+ - "8am to 5pm"
+contactEmail: "info@upsitf.org"
+contactEmailMarketing: "marketing@upsitf.org"
+contactLandlineMain: (02) 788 5898
+contactLandlineSub: (02) 436 2217
+contactFax: (02) 920 2036
+contactMobile: 0917 563 5682
