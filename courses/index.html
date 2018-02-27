@@ -4,6 +4,7 @@ layout: main
 
 #switchFillers: false
 #switchCoursesMulticol: false
+switchDisplay: "embed"                            # "native" or "embed"
 
 imageHeader: "photo_bg-cover-courses.jpg"
 
@@ -48,6 +49,8 @@ dataRegistration: 1
         <h2>Schedules &amp; Rates</h2>
 
       <!-- check if exists -->
+
+        {% if page.switchDisplay == "native" %}
 
         <h3>Confirmed Trainings</h3>
 
@@ -182,17 +185,19 @@ dataRegistration: 1
               <td>
                 {% if eachitem.rateRegular %}<span class="span-rate span-rate-regular"><span>Regular Rate</span> - &#x20B1; {{ eachitem.rateRegular }}</span>{% endif %}
                 {% if eachitem.rateRegularAcadGov %}<span class="span-rate span-rate-regular"><span>Academic/Government Rate</span> - &#x20B1; {{ eachitem.rateRegularAcadGov }}</span>{% endif %}
-    {% if eachitem.rateEarly or eachitem.rateEarlyAcadGov or eachitem.rateEarlyIndusCorpo %}
-    <span class="span-rate span-rate-earlybird">
-      <span>Early Bird Rate</span>
-      <ul>
-        <li>Academic/Government - &#x20B1; {{ eachitem.rateEarlyAcadGov }}</li>
-        <li>Industry/Corporate - &#x20B1; {{ eachitem.rateEarlyIndusCorpo }}</li>
-      </ul>
-    </span>
-    {% endif %}
+                {% if eachitem.rateEarly or eachitem.rateEarlyAcadGov or eachitem.rateEarlyIndusCorpo %}
+                  <span class="span-rate span-rate-earlybird">
+                    <span>Early Bird Rate</span>
+                      <ul>
+                        <li>Academic/Government - &#x20B1; {{ eachitem.rateEarlyAcadGov }}</li>
+                        <li>Industry/Corporate - &#x20B1; {{ eachitem.rateEarlyIndusCorpo }}</li>
+                      </ul>
+                  </span>
+                {% endif %}
               </td>
-              <td><a href="{% if eachitem.id contains "tbc4k" %}{{ site.urlTBC4K }}{% else %}{{ site.urlRegForm }}{% endif %}" target="_blank" class="btn btn-default btn-register">{% if eachitem.id contains "tbc4k" %}TBC4K{% else %}Register{% endif %}</a></td>
+              <td>
+                <a href="{% if eachitem.id contains "tbc4k" %}{{ site.urlTBC4K }}{% else %}{{ site.urlRegForm }}{% endif %}" target="_blank" class="btn btn-default btn-register">{% if eachitem.id contains "tbc4k" %}TBC4K{% else %}Register{% endif %}</a>
+              </td>
             </tr>
 
             {% break %}
@@ -214,7 +219,19 @@ dataRegistration: 1
         {% endif %}
 
         <a href="{{ site.baseurl }}/files/schedule/{{ site.fileSchedule }}" target="_blank" class="btn btn-default" style="margin-top:30px;margin-bottom: 15px;"> Download schedules PDF </a>
-        <span style="display:block">Last updated {{ site.dataLastUpdated }}</span>
+        <!--span style="display:block">Last updated {{ site.dataLastUpdated }}</span-->
+
+        {% else %}
+
+        <!-- GDOCS EMBED CODE HERE -->
+        <div class="embed-responsive embed-responsive-a4">
+          <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRJMTaQXJtXJngvCOVcIE1H1Hx96F6t3z1HBNeMKTa_IIKv_umR1vfG2zPjJG5nimTjbx5H0g_xhm1k/embed?start=false&loop=false&delayms=3000" frameborder="0" width="794" height="1757" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        </div>
+
+        <a href="{{ site.fileScheduleDirect }}" target="_blank" class="btn btn-default" style="margin-top:30px;margin-bottom: 15px;"> Download schedules PDF </a>
+
+        {% endif %}
+
 
       </div>
 

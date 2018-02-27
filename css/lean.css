@@ -984,6 +984,10 @@ ul {
   margin-bottom: 0;
 }
 
+.embed-responsive-a4 {
+  padding-bottom: calc(217.6541717% + 30px);
+}
+
 .div-faq li {
   margin-bottom: 15px;
 }
